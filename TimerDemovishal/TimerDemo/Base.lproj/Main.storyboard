@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TimerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8m-vf-Hl8">
+                                <rect key="frame" x="145" y="329" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2QE-pR-vke"/>
+                                    <constraint firstAttribute="width" constant="30" id="7be-w5-LqI"/>
+                                </constraints>
+                                <state key="normal" image="orangePause.png"/>
+                                <connections>
+                                    <action selector="btnStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sZ8-Gs-haG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0P-Oh-0ID">
+                                <rect key="frame" x="91.5" y="249" width="137" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Tao-mD-Z1d"/>
+                                    <constraint firstAttribute="height" constant="50" id="XmG-7T-L56"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="59"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoJ-n6-KIC" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YPo-QI-djP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FoJ-n6-KIC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Ll-Ng-T4C"/>
+                            <constraint firstItem="Q0P-Oh-0ID" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dzj-ct-gu4"/>
+                            <constraint firstItem="FoJ-n6-KIC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Mt8-rg-gsq"/>
+                            <constraint firstItem="FoJ-n6-KIC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TWg-on-KIW"/>
+                            <constraint firstItem="c8m-vf-Hl8" firstAttribute="top" secondItem="Q0P-Oh-0ID" secondAttribute="bottom" constant="30" id="Wt1-oY-i4z"/>
+                            <constraint firstItem="c8m-vf-Hl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gIp-92-dNC"/>
+                            <constraint firstItem="c8m-vf-Hl8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="mWZ-Gf-cWh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="banneriew" destination="FoJ-n6-KIC" id="lDx-6T-jRB"/>
+                        <outlet property="btnStartAndStop" destination="c8m-vf-Hl8" id="9te-AD-r2n"/>
+                        <outlet property="lblDisplayTime" destination="Q0P-Oh-0ID" id="8CW-rQ-oag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="orangePause.png" width="256" height="256"/>
+    </resources>
+</document>
