@@ -10,6 +10,7 @@
 		BC3871132C3737533AC06C3A /* libPods-TimerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 163078F72BBC7017AE54A476 /* libPods-TimerDemo.a */; };
 		C94F61EB1FB9AB1B00949EE5 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = C94F61EA1FB9AB1700949EE5 /* play.png */; };
 		C94F61EC1FB9AB1F00949EE5 /* orangePause.png in Resources */ = {isa = PBXBuildFile; fileRef = C94F61E91FB9AB1700949EE5 /* orangePause.png */; };
+		C98730031FC2DB82001E02AC /* VTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98730021FC2DB82001E02AC /* VTimer.swift */; };
 		D05C29EF1FB3034A00C8A41B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C29EE1FB3034A00C8A41B /* AppDelegate.swift */; };
 		D05C29F11FB3034A00C8A41B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C29F01FB3034A00C8A41B /* ViewController.swift */; };
 		D05C29F41FB3034A00C8A41B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05C29F21FB3034A00C8A41B /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		7ED048379000731654539451 /* Pods-TimerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimerDemo/Pods-TimerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C94F61E91FB9AB1700949EE5 /* orangePause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangePause.png; sourceTree = "<group>"; };
 		C94F61EA1FB9AB1700949EE5 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		C98730021FC2DB82001E02AC /* VTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTimer.swift; sourceTree = "<group>"; };
 		D05C29EB1FB3034A00C8A41B /* TimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05C29EE1FB3034A00C8A41B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D05C29F01FB3034A00C8A41B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				D05C29F51FB3034A00C8A41B /* Assets.xcassets */,
 				D05C29F71FB3034A00C8A41B /* LaunchScreen.storyboard */,
 				D05C29FA1FB3034A00C8A41B /* Info.plist */,
+				C98730021FC2DB82001E02AC /* VTimer.swift */,
 			);
 			path = TimerDemo;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98730031FC2DB82001E02AC /* VTimer.swift in Sources */,
 				D05C29F11FB3034A00C8A41B /* ViewController.swift in Sources */,
 				D05C29EF1FB3034A00C8A41B /* AppDelegate.swift in Sources */,
 			);
